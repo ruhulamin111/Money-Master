@@ -1,12 +1,13 @@
 // calculation button add event
 document.getElementById('calculation').addEventListener('click', function () {
-    // input and calculation
+    // input and calculation     
     const income = document.getElementById('income').value;
     const food = document.getElementById('food').value;
     const rent = document.getElementById('rent').value;
     const clothes = document.getElementById('clothes').value;
     const totalExpensess = parseFloat(food) + parseFloat(rent) + parseFloat(clothes);
     const balance = income - totalExpensess;
+
     // error handle 
     if (income <= 0) {
         document.getElementById('error-income').style.display = 'block';
@@ -34,6 +35,7 @@ document.getElementById('calculation').addEventListener('click', function () {
         document.getElementById('balance').innerText = balance;
     }
 });
+
 // save button add event
 document.getElementById('saving').addEventListener('click', function () {
     const saving = document.getElementById('save-input').value;
@@ -41,6 +43,7 @@ document.getElementById('saving').addEventListener('click', function () {
     const balance = document.getElementById('balance').innerText;
     const parcentage = (parseFloat(saving) * parseFloat(income)) / 100;
     const remainBalance = parseFloat(balance) - parcentage;
+
     // error handle 
     if (balance < parcentage) {
         document.getElementById('error-saving').style.display = 'block';
