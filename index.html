@@ -15,21 +15,21 @@
 
 <body>
     <header>
-        <h1 class="text-success text-center mt-3 fw-800">Money Master</h1>
+        <h1 class="text-success text-center my-2 fw-800">Money Master</h1>
     </header>
 
     <main>
         <!-- font part -->
-        <section class="d-lg-flex justify-content-evenly align-items-center">
+        <section class="d-lg-flex justify-content-evenly align-items-center h-100">
             <!--title part -->
             <div class="container">
                 <img class="w-100" src="./images/save.jpg" alt="">
             </div>
             <!-- calculation part -->
-            <div class="container m-5 rounded bg-success p-5 text-dark bg-opacity-10">
+            <div class="container m-5 rounded bg-success p-3 text-dark bg-opacity-10">
                 <h3 class="text-center fs-2 fw-bold">Income</h3>
                 <div class="d-flex  justify-content-between my-3">
-                    <span class="fs-4 fw-bold">Income :</span>
+                    <span class="fs-5 fw-bold">Income :</span>
                     <div>
                         <input id="income" type="number" class="p-2" id="">
                         <p id="error-income" class="error text-danger">Please enter positive number</p>
@@ -38,24 +38,24 @@
                 </div>
                 <!-- expensess part -->
                 <h5 class="text-center fs-3 fw-bold">Expensess</h5>
-                <div class="d-flex  justify-content-between m-2">
-                    <span class="fs-4 fw-bold">Food :</span>
+                <div class="d-flex  justify-content-between my-2">
+                    <span class="fs-5 fw-bold">Food :</span>
                     <div>
                         <input id="food" type="number" class="p-2" id="">
                         <p id="error-food" class="error text-danger">Please enter positive number</p>
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-between m-2">
-                    <span class="fs-4 fw-bold">Rent :</span>
+                <div class="d-flex justify-content-between my-2">
+                    <span class="fs-5 fw-bold">Rent :</span>
                     <div>
                         <input id="rent" type="number" class="p-2" id="">
                         <p id="error-rent" class="error text-danger">Please enter positive number</p>
                     </div>
                 </div>
 
-                <div class="d-flex   justify-content-between m-2">
-                    <span class="fs-4 fw-bold">Clothes :</span>
+                <div class="d-flex   justify-content-between my-2">
+                    <span class="fs-5 fw-bold">Clothes :</span>
                     <div>
                         <input id="clothes" type="number" class="p-2" id="">
                         <p id="error-clothes" class="error text-danger">Please enter positive number</p>
@@ -63,30 +63,51 @@
                 </div>
                 <!-- calculation button -->
                 <div class="d-flex justify-content-center m-2">
-                    <button id="calculation" class="btn fs-5 btn-primary my-2">Calculate</button>
+                    <button id="calculation" class="btn fs-5 fw-bold btn-primary my-2">Calculate</button>
 
                 </div>
                 <!-- total balance -->
                 <div>
-                    <h5 class="text-center m-2">Total Expensess: <span id="total-expensess"> 0000</span></h5>
+                    <div class=" d-flex justify-content-between">
+                        <h5 class="fs-5 fw-bold">Total Expensess :</h5>
+                        <h5 class=""><span id="total-expensess" class="fw-bold fs-5"> 0000</span></h5>
+                    </div>
                     <p id="error-expeness" class="error text-center text-danger">Expensess is more than Income</p>
 
                 </div>
                 <div>
-                    <h5 class="text-center m-2">Balance: <span id="balance"> 0000</span></h5>
+                    <div class=" d-flex justify-content-between">
+                        <h5 class="fs-5 fw-bold">Balance :</h5>
+                        <h5><span id="balance" class="fw-bold fs-5"> 0000</span></h5>
+                    </div>
+
                 </div>
                 <!-- saving balance -->
-                <div class="text-center">
-                    <span>Save:</span>
-                    <input id="save-input" type="number" name="" id="">
-                    <span>%</span>
-                    <button id="saving" class="btn btn-primary">Save</button>
+                <div class="text-center my-2">
+                    <div class=" d-flex justify-content-between">
+                        <h5 class="fs-5 fw-bold">Save :</h5>
+                        <div>
+
+                            <input id="save-input" type="number" class="p-2" id="">
+                            <span id="saving-amount" class="fw-bold fs-5">%</span>
+                        </div>
+                    </div>
+
+                    <button id="saving" class="btn btn-primary my-2 fs-5 fw-bold">Save</button>
                 </div>
                 <!-- remaining balance -->
                 <div>
-                    <h5 class="text-center">Saving Amount: <span id="saving-amount"> 0000</span></h5>
+                    <div class=" d-flex justify-content-between">
+                        <h5 class="fs-5 fw-bold">Saving Amount :</h5>
+                        <h5><span id="saving-amount" class="fw-bold fs-5"> 0000</span></h5>
+                    </div>
                     <p id="error-saving" class="error text-center text-danger">Balance is less than Saving</p>
-                    <h5 class="text-center">Remainging Balance: <span id="remaining-balance"> 0000</span></h5>
+
+                    <div class=" d-flex justify-content-between">
+                        <h5 class="fs-5 fw-bold">Remainging Balance :</h5>
+                        <h5><span id="remaining-balance" class="fw-bold fs-5"> 0000</span></h5>
+                    </div>
+
                 </div>
             </div>
 
